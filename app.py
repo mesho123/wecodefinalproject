@@ -4,10 +4,8 @@ import dataset, random, os
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-# TODO: set up database
-# db = dataset.connect("<database>")
-# hello maysam!
-
+db_url="postgres://gdhsgcrpexxhrv:b0aba3843a99ad38f3ceacec1e8358abbe06895dbb972acb8b0cc516a776c45b@ec2-54-204-23-228.compute-1.amazonaws.com:5432/datafrifoj0nkf"
+db = dataset.connect(db_url)
 @app.route('/')
 @app.route('/home')
 def homepage():
@@ -39,6 +37,9 @@ def template_test1():
 
 
 
+# TODO: set up database
+# db = dataset.connect("<database>")
+# hello maysam!db = dataset.connect(db_url)
 
 
 if __name__ == "__main__":
