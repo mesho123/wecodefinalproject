@@ -20,7 +20,7 @@ def template_test():
 
 
 @app.route('/signup', methods=['POST', 'GET'])
-def template_test():
+def template_test1():
 	return render_template('signup.html')
 
 if __name__ == "__main__":
