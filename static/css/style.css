@@ -23,3 +23,11 @@ li a:hover {
   background-color: #111;
 }
 
+#img1 {
+  /*‫‪background-color:‬‬ ‫#FFCC66‬‬;*/
+‫‪  background-image:‬‬ ‫url("maysam.png");
+  background-position: 50% 25%;
+  width:20%;
+  height:10%;
+
+}

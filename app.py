@@ -12,10 +12,16 @@ app.secret_key = os.urandom(24)
 @app.route('/home')
 def homepage():
 	return render_template('home.html')
-
 # TODO: route to /register
+@app.route('/signin', methods=['POST', 'GET'])
+def template_test():
+	return render_template('signin.html')
 
-# TODO: route to /error
+
+
+@app.route('/signup', methods=['POST', 'GET'])
+def template_test():
+	return render_template('signup.html')
 
 if __name__ == "__main__":
     app.run(port=3000)
