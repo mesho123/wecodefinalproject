@@ -23,6 +23,24 @@ def template_test():
 def template_test1():
 	return render_template('signup.html')
 
+# @app.route("/newAccount" , methods=['POST'])
+# def newAccount():
+# 	account =db ['account']
+# 	potential_username= request.form['username']
+# 	potential_password= request.form['password']
+# 	username_exists = account.find_one(username=potential_username)
+# 	if username_exists:
+# 		return render_template("ss.html")
+# 	else:
+# 		account.insert(dict(username=potential_username, password=potential_password))
+# 		return render_template("home.html")
+
+
+
+
+
+
+
 if __name__ == "__main__":
     app.run(port=3000)
 
